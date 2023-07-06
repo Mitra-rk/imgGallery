@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Gallery-In-ONLINE-SHOP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="small-img">
+        <img src="images/img-1.jpg" alt="" onclick="show(this)" />
+        <img src="images/img-2.jpg" alt="" onclick="show(this)" />
+        <img src="images/img-3.jpg" alt="" onclick="show(this)" />
+        <img src="images/img-4.jpg" alt="" onclick="show(this)" />
+        <img src="images/img-5.jpg" alt="" onclick="show(this)" />
+      </div>
+      <div class="image-box">
+        <img id="img1" src="images/img-1.jpg" alt="" />
+      </div>
+    </div>
+    <script>
+       
+      function show(smallimg){
+      
+       let box=document.querySelector("#img1");
+        
+        box.src=smallimg.src;
+      }
+    </script>
+  </body>
+</html>
